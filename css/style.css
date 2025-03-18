@@ -1,0 +1,351 @@
+/* Skip to Main Content */
+.skip-to-main{
+    color: white;
+    position:absolute;
+    top:-40px;
+    left:-10000px;
+}
+
+/* Skip to main content appear on tab */
+.skip-to-main:focus {
+    top:20px;
+    left:10px;
+    font-size: 35px;
+    background-color: #007bc1;
+}
+
+/* General Layout */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 255, 255);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2rem;
+}
+
+    /* CSS Styling Images from w3schools */
+img {
+    background-color: white;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2), 0 0.375rem 1.25rem rgba(0, 0, 0, 0.19);
+}
+
+p {
+    margin: 1.5rem 0;
+    line-height: 1.6rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #025564;
+    font-weight: bold;
+    line-height: 2.8rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h2 {
+    margin: 1rem 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #025564;
+    font-weight: bold;
+    line-height: 1.8rem;
+    padding: 1rem 0;
+}
+
+/* Navbar */
+nav a:hover,
+nav a:active {
+    text-decoration: underline;
+}
+
+nav a.active {
+    background-color: #FFCB05;
+    color: #00274C;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul a {
+    display: block;
+    color: #FFCB05;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #00274C;
+}
+
+/* Navbar img placement */
+.navbar-logo img {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    max-width: 3.50rem;
+    box-shadow: none;
+}
+
+/* 404 page */
+.page-not-found {
+    max-width: 600px;
+    margin: 10rem auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Formatting of section/article/ol/li/... */
+
+.content-area {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between text and image */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    margin: 2rem 0;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.col-md-6 {
+    width: 50%; /* Each column takes half of the row */
+    padding: 1rem;
+}
+
+.col-md-6 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2), 0 0.375rem 1.25rem rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+
+#life-outside-classroom p,
+#life-outside-classroom li {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#life-outside-classroom ul li {
+    padding-bottom: 0.5rem;
+}
+
+section ol {
+    list-style-type: square;
+    margin: 0.5rem;
+    padding: 0 1rem;
+}
+
+.support-list {
+    list-style: none;
+    padding: 0 1rem;
+}
+
+.support-list li ul {
+    list-style: square;
+    margin: 0.5rem;
+    padding: 0 2rem;
+    border-bottom: 0.0625rem solid #eeeeee;
+}
+
+ol li {
+    list-style-type: square;
+    margin: 0.5rem;
+    padding: 0 1rem;
+}
+
+dl {
+    margin: 1rem 0;
+    padding: 0;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #025564;
+}
+
+dd {
+    margin-left: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+figcaption {
+    font-size: 1rem;
+}
+
+
+footer {
+    background-color: #00274C;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+footer a {
+    color: #FFCB05;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .logo img {
+    max-width: 30%;
+    margin: 0 auto 1.5rem;
+    display: block;
+}
+
+.button,
+form button[type="submit"] {
+    display: block;
+    /* Makes the button a block element so it can be centered */
+    margin: 0 auto;
+    /* Centers the button horizontally */
+    padding: 1rem;
+    font-size: 1rem;
+    color: #000000;
+    background-color: #FFCB05;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover,
+form button[type="submit"]:hover {
+    background-color: #00274C;
+    color: #ffffff;
+}
+
+form button[type="submit"] {
+    background-color: #2F65A7;
+    color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    align-content: flex-start;
+    margin-bottom: 4rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+#message {
+    width: 100%;
+    height: 150px;
+}
+
+
+
+@media all and (prefers-reduced-motion: reduce) {
+    #logo {
+        animation: none;
+    }
+
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        margin-bottom: 4rem;
+    }
+
+    section {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .button,
+    form button[type="submit"] {
+        padding: 1.2rem 1.5rem;
+        font-size: 1.1rem;
+    }
+
+
+    section,
+    .container {
+        padding: 3rem 2rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+
+    nav ul a {
+        font-size: 1.1rem;
+        padding: 1.5rem;
+    }
+
+    .food-image {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
